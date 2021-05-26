@@ -16,6 +16,7 @@
 		DA89CE5D265CE2910000CE40 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89CE5C265CE2910000CE40 /* ProductView.swift */; };
 		DA89CE60265CE3130000CE40 /* Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89CE5F265CE3130000CE40 /* Watch.swift */; };
 		DA89CE63265CE5C90000CE40 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89CE62265CE5C90000CE40 /* ColorExtensions.swift */; };
+		DA89CE67265D0C880000CE40 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89CE66265D0C880000CE40 /* TopBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DA89CE5C265CE2910000CE40 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		DA89CE5F265CE3130000CE40 /* Watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watch.swift; sourceTree = "<group>"; };
 		DA89CE62265CE5C90000CE40 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		DA89CE66265D0C880000CE40 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +92,8 @@
 		DA89CE54265CD0550000CE40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DA89CE68265D0C8D0000CE40 /* Support */,
 				DA89CE46265CCDEB0000CE40 /* ContentView.swift */,
-				DA89CE5A265CE1170000CE40 /* SegmentButton.swift */,
-				DA89CE5C265CE2910000CE40 /* ProductView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +131,16 @@
 				DA89CE5F265CE3130000CE40 /* Watch.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DA89CE68265D0C8D0000CE40 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DA89CE66265D0C880000CE40 /* TopBarView.swift */,
+				DA89CE5A265CE1170000CE40 /* SegmentButton.swift */,
+				DA89CE5C265CE2910000CE40 /* ProductView.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 				DA89CE63265CE5C90000CE40 /* ColorExtensions.swift in Sources */,
 				DA89CE5B265CE1170000CE40 /* SegmentButton.swift in Sources */,
 				DA89CE59265CDB640000CE40 /* ViewExtensions.swift in Sources */,
+				DA89CE67265D0C880000CE40 /* TopBarView.swift in Sources */,
 				DA89CE45265CCDEB0000CE40 /* WatchShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
