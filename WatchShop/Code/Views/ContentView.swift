@@ -11,6 +11,7 @@ struct ContentView: View {
     
     // MARK:- variables
     @State var selectedSegmentIndex: Int = 0
+    @State var watchData: [Watch] = data
     
     // MARK:- views
     var body: some View {
@@ -29,11 +30,17 @@ struct ContentView: View {
                         .padding(.top, 28)
                         .padding([.leading, .trailing], 12)
                     
+                    // flexible grid item occupies the available space
+                    // since we have two of them, each row will display two
+                    // equally distributed views per row.
+                    
+                    // the spacing under GridItem is applied to the columns, and the spacing which is
+                    // outside the columns (32) is applied between rows.
                     
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 20), count: 2), alignment: .leading, spacing: 32) {
-                        ForEach(data, id: \.self) { watch in
+                        ForEach(watchData, id: \.self) { watch in
                             ProductView(watch: watch)
-                                .frame(minWidth: 0, minHeight: UIScreen.main.bounds.width / 1.75)
+                                .frame(minHeight: UIScreen.main.bounds.width / 1.75)
                         }
                     }.padding(.top, 36)
                 }.padding(.top, 24)
