@@ -24,11 +24,10 @@ struct SegmentButton: View {
         }
         .background(
             RoundedRectangle(cornerRadius: 10)
-                .padding([.leading, .trailing], -15)
-                .padding([.top, .bottom], -10)
                 .foregroundColor(Color.black.opacity(0.1))
                 .opacity(self.selectedSegmentIndex == index ? 1 : 0)
                 .animation(.default)
+                .padding(-12)
         )
         .buttonStyle(PlainButtonStyle())
     }
@@ -47,13 +46,13 @@ struct SegmentStackView: View {
             })
             Spacer()
             SegmentButton(selectedSegmentIndex: $selectedSegmentIndex,
-                          title: "Popular", index: 1, buttonAction: {
-                self.selectedSegmentIndex = 1
+                          title: "Recommended", index: 2, buttonAction: {
+                self.selectedSegmentIndex = 2
             })
             Spacer()
             SegmentButton(selectedSegmentIndex: $selectedSegmentIndex,
-                          title: "Recommended", index: 2, buttonAction: {
-                self.selectedSegmentIndex = 2
+                          title: "Popular", index: 1, buttonAction: {
+                self.selectedSegmentIndex = 1
             })
         }
     }
@@ -61,6 +60,7 @@ struct SegmentStackView: View {
 
 struct SegmentButton_Previews: PreviewProvider {
     static var previews: some View {
-        SegmentButton(selectedSegmentIndex: .constant(0), title: "Trending", index: 0, buttonAction: {})
+//        SegmentButton(selectedSegmentIndex: .constant(0), title: "Trending", index: 0, buttonAction: {})
+        SegmentStackView(selectedSegmentIndex: .constant(0))
     }
 }
