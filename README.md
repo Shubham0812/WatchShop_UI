@@ -1,9 +1,7 @@
 # WatchShop_UI
 A simple SwiftUI Application to demonstrate creation of UI using SwiftUI.
 
-
-
-
+<img src="https://raw.githubusercontent.com/Shubham0812/WatchShop_UI/main/WatchShop/Resources/screens/1.png" width="300"> 
 
 
 
